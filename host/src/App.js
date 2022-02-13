@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <div style={{ border: "2px solid greenyellow", padding: "0 16px" }}>
-        <h1>Host</h1>
+        <h1>Webpack App Host</h1>
       </div>
       <MyErrorBoundary>
         <Suspense fallback={"loading..."}>
