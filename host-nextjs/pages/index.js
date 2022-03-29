@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 const RemoteApp = dynamic(
   async () => {
     // Sleep, for demo purposes
-    await new Promise((res) => setTimeout(res, 1500));
+    await new Promise((res) => setTimeout(res, 2000));
     // @ts-ignore
     return await import("mf_webpack_01/App");
   },
@@ -24,8 +24,8 @@ const RemoteApp = dynamic(
 
 export default function Home() {
   return (
-    <div>
-      <div style={{ border: "2px solid greenyellow", padding: "0 16px" }}>
+    <div style={{ border: "5px solid blue", height: "100vh", padding: "16px" }}>
+      <div style={{ marginBottom: "16px", color: "blue" }}>
         <h1>Next.js App Host</h1>
       </div>
       <RemoteApp />
